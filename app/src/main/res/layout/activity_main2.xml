@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- EditText để nhập thông tin học sinh -->
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Họ tên" />
+
+        <EditText
+            android:id="@+id/editTextMath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Điểm toán"
+            android:inputType="number"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextLiterature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Điểm văn"
+            android:inputType="number"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Điểm ngoại ngữ"
+            android:inputType="number"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Button để thêm học sinh vào danh sách -->
+        <Button
+            android:id="@+id/buttonAddStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm học sinh" />
+
+        <!-- ListView để hiển thị danh sách học sinh -->
+        <ListView
+            android:id="@+id/listViewStudents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Button để tìm học sinh có tổng điểm cao nhất -->
+        <Button
+            android:id="@+id/buttonFindMax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Học sinh có tổng điểm cao nhất" />
+
+        <!-- Button để tìm học sinh có tổng điểm nhỏ nhất -->
+        <Button
+            android:id="@+id/buttonFindMin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Học sinh có tổng điểm nhỏ nhất" />
+
+        <!-- Button để sắp xếp danh sách -->
+        <Button
+            android:id="@+id/buttonSort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sắp xếp danh sách" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
